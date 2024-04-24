@@ -1,0 +1,37 @@
+#
+
+pluginName = siriusP Edit Support
+providerName = www.example.org
+
+_UI_CreateChild_text = {0}
+_UI_CreateChild_text2 = {1} {0}
+_UI_CreateChild_text3 = {1}
+_UI_CreateChild_tooltip = Create New {0} Under {1} Feature
+_UI_CreateChild_description = Create a new child of type {0} for the {1} feature of the selected {2}.
+_UI_CreateSibling_description = Create a new sibling of type {0} for the selected {2}, under the {1} feature of their parent.
+
+_UI_PropertyDescriptor_description = The {0} of the {1}
+
+_UI_market_type = market
+_UI_sepet_type = sepet
+_UI_product_type = product
+_UI_Unknown_type = Object
+
+_UI_Unknown_datatype= Value
+
+_UI_market_sepetler_feature = Sepetler
+_UI_market_name_feature = Name
+_UI_sepet_name_feature = Name
+_UI_sepet_products_feature = Products
+_UI_product_name_feature = Name
+_UI_product_price_feature = Price
+_UI_product_type_feature = Type
+_UI_Unknown_feature = Unspecified
+
+_UI_productType_meyveSebze_literal = meyveSebze
+_UI_productType_kiyafet_literal = kiyafet
+_UI_productType_cerez_literal = cerez
+_UI_ProductType1_type = Product Type1
+_UI_sepet_types_feature = Types
+_UI_ProductType1_types_feature = Types
+_UI_ProductType1_products_feature = Products

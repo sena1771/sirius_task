@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="s" nsURI="s" nsPrefix="s">
+  <eClassifiers xsi:type="ecore:EClass" name="market">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sepetler" upperBound="-1"
+        eType="#//sepet" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="sepet">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="products" upperBound="-1"
+        eType="#//product"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="types" upperBound="3" eType="#//ProductType1"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="product">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="price" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="productType">
+    <eLiterals name="meyveSebze" value="1" literal="meyveSebze"/>
+    <eLiterals name="kiyafet" value="2"/>
+    <eLiterals name="cerez" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProductType1">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="types" eType="#//productType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="productsadd" upperBound="-1"
+        eType="#//product"/>
+  </eClassifiers>
+</ecore:EPackage>
